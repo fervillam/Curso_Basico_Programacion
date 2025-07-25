@@ -1,0 +1,28 @@
+#Titulo{
+    font-family: cursive;
+    color:darkcyan;
+}
+
+#PrimerFrame{
+    width: 100;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 244, 241);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px black;
+    font-family:Arial, Helvetica, sans-serif;
+    
+ }
+
+ #principal{
+    width: 600;
+    font-size: large;
+    max-width: 1400px;
+    margin: auto;
+    padding: 5px;
+    background-color: rgb(216, 196, 171);
+    border-radius: 2 px;
+    box-shadow: chocolate;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
