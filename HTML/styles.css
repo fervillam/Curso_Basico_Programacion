@@ -1,5 +1,8 @@
 #Titulo{
-    font-family: cursive;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Dancing Script", cursive;
     color:darkcyan;
 }
 
@@ -11,8 +14,7 @@
     background-color: rgb(255, 244, 241);
     border-radius: 8px;
     box-shadow: 0 2px 10px black;
-    font-family:Arial, Helvetica, sans-serif;
-    
+    font-family: Delius, cursive; 
  }
 
  #principal{
