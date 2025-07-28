@@ -1,0 +1,60 @@
+:root{
+  --primary-color: #3498db;
+  --background-color: #ffffff;
+  --accent-color: #f39c12;
+  --text-color: #2c3e50;
+  --heading-color: #333333;
+}
+
+#Titulo{
+    background-color: var(--primary-color);
+    color: white;
+    font-family: "Delius", cursive;
+    font-size: 50px;
+    padding: 1rem;
+    text-align: center;
+}
+
+#Tp{
+    color: var(--heading-color);
+    font-family: "Quicksand", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#Presentation{
+    color: var(--text-color);
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#About_Me, #Available_Subjects {
+    color: var(--text-color);
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#About_Me{
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: #f39c12;
+    margin-right: auto;
+    max-width: 50%px;
+    padding: 1rem;
+    width: 50%;
+    
+}
+
+#Available_Subjects{
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: #f39c12;
+    margin-left: auto;
+    max-width: 50%;
+    padding: 1rem;
+    width: 50%;
+}
