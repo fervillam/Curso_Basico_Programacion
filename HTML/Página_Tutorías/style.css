@@ -46,7 +46,7 @@ html{
 
 #Titulo{
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
     font-family: "Delius", cursive;
     font-size: 50px;
     padding: 1rem;
@@ -71,6 +71,7 @@ html{
 
 .column{
     align-items: stretch;
+    background-image: ;
     display: flex;
     font-family: Lato, sans-serif;
     justify-content: space-between; 
@@ -87,7 +88,7 @@ html{
 
 #About_Me, #Services{
     align-content: center;
-    border: #2c3e50 2px solid;
+    border: var(--text-color) 2px solid;
     border-radius: 8px;
     box-shadow: var(--accent-color);
     color: var(--text-color);
@@ -98,48 +99,112 @@ html{
 }
 
 #Topics{
-  padding: 2rem;
+  width: auto;
+  padding: 2rem 5vw;
   font-family: Lato, sans-serif;
   color: var(--text-color);
+  
+}
+
+#Subtitle_3 {
+  font-size: 26px;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
-#Subtitle_3{
-  color: var(--accent-color);
-  font-size: 26px;
-  margin-bottom: 30px;
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 
-.topics-grid{
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+.topic-column {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
 }
 
-.topic-column{
-  min-width: 200px;
+.topic-column::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdn.vectorstock.com/i/500p/14/96/cute-school-doodle-pattern-vector-47191496.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  opacity: 0.20;
+  z-index: -1;
+  border-radius: 8px;
 }
 
-.topic-column ul{
+.topic-column ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.topic-column li{
-  margin: 5px 0;
+.topic-column li {
+  margin: 6px 0;
   font-size: 16px;
   text-align: left;
 }
 
-.topic-column li strong{
+.topic-column li strong {
   font-size: 18px;
-  display: block;
-  margin-bottom: 10px;
   color: var(--primary-color);
+  margin-bottom: 10px;
+  display: block;
 }
 
+#Message_Box {
+  font-family: Lato, sans-serif;
+  color: var(--text-color);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#Subtitle_4 {
+  color: var(--heading-color);
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#Subtitle_5 {
+  color: var(--accent-color);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#message {
+  width: 90%;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid var(--background-color);
+  resize: vertical;
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+}
+
+#Cobertura{
+  background-color: var(--text-color);
+  color: var(--background-color);
+  font-family: Lato, sans-serif;
+  padding: 1rem;
+  text-align: center;
+}
+
+.map{
+  width: 100%;
+  height: 300px;
+}
 
 #Rights, #Contact{
     background-color: var(--heading-color);
