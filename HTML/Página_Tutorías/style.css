@@ -1,8 +1,8 @@
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;                     /* Desplazamiento suave al hacer clic en enlaces de anclaje */
 }
 
-:root{
+:root{                                           /* Variables de color para el tema */
   --primary-color: #3498db;
   --background-color: #ffffff;
   --accent-color: #f39c12;
@@ -10,50 +10,50 @@ html{
   --heading-color: #333333;
 }
 
-#navbar{
-  position: fixed;
-  top: 0;
+#navbar{                                         /* Estilos para la barra de navegación */
+  position: fixed;                               /* Fija la barra en su lugar */
+  top: 0;                                        /* Fija la barra en la parte superior */
   width: 100%;
   background-color: var(--background-color);
   border-bottom: 1px solid #ccc;
-  z-index: 1000;
+  z-index: 1000;                                 /* Asegura que la barra de navegación esté por encima de otros elementos (representa profundidad, a.k.a eje Z de un sistema cartesiano en 3 dimensiones) <<Ver línea 139 para más info>> */      
   font-family: Lato, sans-serif;
 }
 
-#navbar ul{
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 10px 0;
-  gap: 30px;
+#navbar ul{                                      /* Estilos para la lista que se encuentra en la barra de navegación */
+  list-style: none;                              /* Quita los puntos de la lista */
+  display: flex;                                 /* Usa flexbox para distribuir los elementos */
+  justify-content: center;                       /* Centra los elementos horizontalmente */
+  margin: 0;                                     /* Quita el margen por defecto */
+  padding: 10px 0;                               /* Añade algo de espacio arriba y abajo */
+  gap: 30px;                                     /* Añade espacio entre los elementos */
 }
 
-#navbar li{
-  display: inline;
+#navbar li{                                    /* Estilos para los elementos de la lista en la barra de navegación */
+  display: inline;                             /* Muestra los elementos en línea */
 }
 
-#navbar a{
-  text-decoration: none;
+#navbar a{                                     /* Estilos para los enlaces en la barra de navegación */
+  text-decoration: none;                       /* Quita el subrayado de los enlaces */
   color: var(--text-color);
-  font-weight: 600;
-  transition: color 0.3s ease;
+  font-weight: 600;                            /* Hace el texto un poco más grueso */
+  transition: color 0.3s ease;                 /* Añade una transición suave al cambiar de color */
 }
 
-#navbar a:hover{
+#navbar a:hover{                               /* Estilos para los enlaces al pasar el cursor por encima */
   color: var(--primary-color);
 }
 
-#Titulo{
+#Titulo{                                        /* Estilos para el título principal */
     background-color: var(--primary-color);
     color: var(--background-color);
     font-family: "Delius", cursive;
     font-size: 50px;
-    padding: 1rem;
+    padding: 1rem;                             /* Añade espacio alrededor del texto */
     text-align: center;
 }
 
-#Tp{
+#Tp{                                            /* Estilos para el subtítulo */
     color: var(--heading-color);
     font-family: "Quicksand", sans-serif;
     font-size: 30px;
@@ -62,98 +62,97 @@ html{
     margin-bottom: 20px;
 }
 
-#Presentation{
+#Presentation{                                   /* Estilos para la sección de presentación */
     color: var(--text-color);
     font-family: Lato, sans-serif;
     font-size: 20px;
     text-align: center;
 }
 
-.column{
-    align-items: stretch;
-    background-image: ;
-    display: flex;
+.column{                                    /* Estilos para las columnas de la sección de presentación */
+    align-items: stretch;                   /* Alinea los elementos hijos para que ocupen todo el espacio disponible */
+    display: flex;                          /* Usa flexbox para distribuir los elementos */
     font-family: Lato, sans-serif;
-    justify-content: space-between; 
+    justify-content: space-between;         /* Distribuye los elementos con espacio entre ellos */ 
     padding: 20px;
     gap: 20px;
 }
 
-#Subtitle_1, #Subtitle_2{
-    color: var(--accent-color);
+#Subtitle_1, #Subtitle_2{                    /* Estilos para los subtítulos */
+    color: var(--accent-color); 
     font-family: Lato, sans-serif;
     font-size: 26px;
     text-align: center;
 }
 
-#About_Me, #Services{
+#About_Me, #Services{                         /* Estilos para las secciones "Sobre mí" y "Servicios" */
     align-content: center;
     border: var(--text-color) 2px solid;
     border-radius: 8px;
     box-shadow: var(--accent-color);
     color: var(--text-color);
-    margin-right: auto;
-    max-width: 50%;
+    margin-right: auto;                        /* Alinea a la izquierda */
+    max-width: 50%;                           /* Limita el ancho máximo de la sección a la mitad de la pantalla */
     padding: 1rem;
     width: 50%;
 }
 
-#Topics{
-  width: auto;
-  padding: 2rem 5vw;
+#Topics{                                       /* Estilos para la sección de temas */
+  width: auto;                                 /* Ancho automático para adaptarse al contenido */
+  padding: 2rem 5vw;                           /* Añade espacio alrededor del contenido */ 
   font-family: Lato, sans-serif;
   color: var(--text-color);
   
 }
 
 #Subtitle_3 {
-  font-size: 26px;
+  font-size: 26px;                              /* Tamaño de fuente para el subtítulo */
   color: var(--accent-color);
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
 
-.topics-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+.topics-grid {                             /* Estilos para la cuadrícula de temas */ 
+  display: grid;                           /* Usa grid para organizar los temas */
+  grid-template-columns: repeat(2, 1fr);   /* Dos columnas de igual tamaño */
+  gap: 30px;                               /* Espacio entre las columnas */
 }
 
-.topic-column {
+.topic-column {                            /* Estilos para las columnas de temas */
   position: relative;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem 1.5rem;
 }
 
-.topic-column::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://cdn.vectorstock.com/i/500p/14/96/cute-school-doodle-pattern-vector-47191496.jpg");
-  background-repeat: repeat;
-  background-size: cover;
-  opacity: 0.20;
-  z-index: -1;
+.topic-column::before {               /* Pseudo-elemento para el fondo de la columna (lo que más me costó trabajo) */
+  content: "";                        /* Necesario para crear el pseudo-elemento */
+  position: absolute;                 /* Posiciona el pseudo-elemento */
+  top: 0; left: 0;                    /* Alinea el pseudo-elemento al inicio de la columna */
+  width: 100%;                        /* Ancho completo de la columna */
+  height: 100%;                       /* Alto completo de la columna */
+  background-image: url("https://cdn.vectorstock.com/i/500p/14/96/cute-school-doodle-pattern-vector-47191496.jpg");  /* Imagen de fondo */
+  background-repeat: repeat;          /* Repite la imagen de fondo */
+  background-size: cover;             /* Cubre todo el área del pseudo-elemento */
+  opacity: 0.20;                      /* Transparencia del 20% para el fondo */
+  z-index: -1;                        /* Ubica el pseudo-elemento detrás del contenido */
   border-radius: 8px;
 }
 
-.topic-column ul {
-  list-style: none;
+.topic-column ul {                    /* Estilos para la lista de temas */
+  list-style: none;                   /* Quita los puntos de la lista */
   padding: 0;
   margin: 0;
 }
 
-.topic-column li {
+.topic-column li {                    /* Estilos para los elementos de la lista de temas */
   margin: 6px 0;
   font-size: 16px;
-  text-align: left;
+  text-align: left;                   /* Alinea el texto a la izquierda */
 }
 
-.topic-column li strong {
+.topic-column li strong {             /* Estilos para los elementos en negrita en la lista de temas */
   font-size: 18px;
   color: var(--primary-color);
   margin-bottom: 10px;
