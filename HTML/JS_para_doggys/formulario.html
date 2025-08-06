@@ -2,23 +2,23 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <script src="formulario_script.js"></script>
   <title>Formulario de Contacto</title>
 </head>
 <body>
   <h1>Formulario de Contacto</h1>
 
   <form id="formulario_contacto">
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+    <label for="nombre">Nombre:</label><br> <!--label for= se usa para darle nombre a lo que tenga ese id. Por ejemplo, label for="nombre" está nombrando al atributo con id="nombre", que es el input de la siguiente página-->
+    <input type="text" id="nombre" name="nombre"><br><br>
 
     <label for="email">Correo electrónico:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+    <input type="email" id="email" name="email"><br><br>
 
     <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" cols="30" required></textarea><br><br>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea><br><br>
 
-    <input id="submit" type="submit" value="Enviar"> <!--Botón enviar-->
+    <input id="boton_enviar" type="submit" value="Enviar"> <!--Botón enviar-->
   </form>
 </body>
+<script src="formulario_script.js"></script> <!--El script que llama al archivo JS debe ubicarse al final del body para que primero ejecute el html y luego llame al archivo javascript. El src=formulario_script.js está llamando al archivo .js-->
 </html>
