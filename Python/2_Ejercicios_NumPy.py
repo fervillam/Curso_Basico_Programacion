@@ -16,7 +16,7 @@ print("Producto:", np.prod(arreglo)) # Multiplica los números
 
 matriz = np.arange(1,10).reshape(3,3) # arange(1,10) me muestra un arreglo de números de a 1 a 9 y reshape(3,3) me reorganiza los números en una matriz 3x3
 print("Matriz original:\n", matriz) # \n muestra un salto de línea, me imprime la matriz en el siguiente renglón
-print("Transpuesta:\n", matriz.T) # La matriz original orienta los números de forma ascendente de izquierda a derecha y de arriba a abajo. La transpuesta lo hace de arriba a abajo y de izquierda a derecha
+print("Transpuesta:\n", matriz.T) # La matriz original orienta los números de forma ascendente de izquierda a derecha y de arriba a abajo. La transpuesta lo hace de arriba a abajo y de izquierda a derecha. .T arroja la transposición
 
 # Indexación y slicing #
 
