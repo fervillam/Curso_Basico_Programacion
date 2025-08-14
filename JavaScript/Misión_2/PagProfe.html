@@ -8,6 +8,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Delius&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p8ZHqjXpS/ftnT0WmOpwl2Zj2ZyfzENmjaeZ9ct4rsM=" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-VuZ8Ezs6+eN/mU1mZ2MtPoZ+rlCM1L2zPRP6p4vIGD8=" crossorigin=""></script>
     </head>
     <body>
         <nav id="navbar">
@@ -146,9 +149,12 @@
         </div>
 
         <div id="Cobertura">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9393316047634!2d-73.125942!3d7.119349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683f881d2b7283%3A0xc3a8fef8327d6e7f!2sBucaramanga%2C%20Santander!5e0!3m2!1ses!2sco!4v1695664713381!5m2!1ses!2sco" class="map"></iframe>
+            <h3>Selecciona una ubicación en el mapa</h3>
             <p><b>Zonas con recargo por transporte:</b> Floridablanca, Girón, Piedecuesta, Rionegro</p>
             <p><b>Fuera de cobertura:</b> Más de 15 km desde el centro de Bucaramanga</p>
+            
+            <div id="map" style="width: 100%; height: 300px;"></div> <!--El mapa que se mostrará con js-->
+            <p id="coverage-message"></p> <!--El mensaje que aparecerá de acuerdo con la ubicación que se señale en el mapa-->
         </div>
 
         <div class="container" id="Message_Box">
