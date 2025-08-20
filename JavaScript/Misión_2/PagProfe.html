@@ -9,8 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Delius&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p8ZHqjXpS/ftnT0WmOpwl2Zj2ZyfzENmjaeZ9ct4rsM=" crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-VuZ8Ezs6+eN/mU1mZ2MtPoZ+rlCM1L2zPRP6p4vIGD8=" crossorigin=""></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> <!-- Esto es para llamar a leaflet en CSS-->
     </head>
     <body>
         <nav id="navbar">
@@ -149,12 +148,11 @@
         </div>
 
         <div id="Cobertura">
-            <h3>Selecciona una ubicación en el mapa</h3>
-            <p><b>Zonas con recargo por transporte:</b> Floridablanca, Girón, Piedecuesta, Rionegro</p>
+            <h3>Haz clic en una zona del mapa para calcular el recargo de transporte y si te encuentras dentro de las zonas de cobertura para clases a domicilio</h3>
+            <div id="map"></div> <!--Antes tenía un iframe con el mapa embedido de Google Maps-->
+            <p id="map-result"></p>
+            <p>El<b> recargo de transporte aplica</b> para las ubicaciones que se encuentren <b>a más de un 1 Kilómetro de distancia del centro de Bucaramanga</b> y varía con la distancia</p>
             <p><b>Fuera de cobertura:</b> Más de 15 km desde el centro de Bucaramanga</p>
-            
-            <div id="map" style="width: 100%; height: 300px;"></div> <!--El mapa que se mostrará con js-->
-            <p id="coverage-message"></p> <!--El mensaje que aparecerá de acuerdo con la ubicación que se señale en el mapa-->
         </div>
 
         <div class="container" id="Message_Box">
@@ -187,6 +185,9 @@
                         <span>+57 316 689 8810</span>
                     </div>
                 </div>
-        </footer>  
+        </footer>
+        
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> <!-- Esto es para llamar a leaflet en JS-->
+        <script src="script.js"></script>
     </body>  
 </html>
